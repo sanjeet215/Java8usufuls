@@ -1,0 +1,62 @@
+<mat-sidenav-container>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+
+            <div>
+                <a>
+                    <mat-menu #appMenu="matMenu">
+                        <ng-template matMenuContent>
+                            <div *ngFor="let menuitem of listCars">
+                            <button mat-menu-item>{{menuitem.carBrand}}</button>
+                            </div>
+                            <!-- <button mat-menu-item>Item 1</button>
+                            <button mat-menu-item>Item 2</button>
+                            <button mat-menu-item>Item 3</button>
+                            <button mat-menu-item>Item 4</button>
+                            <button mat-menu-item>Item 5</button>
+                            <button mat-menu-item>Item 6</button> -->
+                        </ng-template>
+                    </mat-menu>
+                    <button mat-icon-button [matMenuTriggerFor]="appMenu">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                </a>
+
+
+
+            </div>
+            <div>
+                <a>
+                    Material Blog
+                </a>
+            </div>
+            <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+                <ul fxLayout fxLayoutGap="20px" class="navigation-items">
+                    <li>
+                        <a>
+                            <mat-icon class="icon">input</mat-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <mat-icon class="icon">home</mat-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <mat-icon class="icon">dashboard</mat-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <mat-icon class="icon">input</mat-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </mat-toolbar>
+        <main>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
