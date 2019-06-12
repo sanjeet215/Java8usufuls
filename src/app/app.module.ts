@@ -29,6 +29,7 @@ import { ErrorComponent } from './error/error.component';
 import { CardComponent } from './card/card.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { CardGraphComponent } from './card-graph/card-graph.component';
 //import { Component } from '@angular/core';
 
 @NgModule({
@@ -38,7 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
         WelcomeComponent,
         DashboardComponent,
         ErrorComponent,
-        CardComponent
+        CardComponent,
+        CardGraphComponent
     ],
     imports: [
         BrowserModule,
