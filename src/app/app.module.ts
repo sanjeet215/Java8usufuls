@@ -4,15 +4,60 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
+
+
+import { MenuserviceService } from './services/menuservice.service';
+
+
+import {
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+} from '@angular/material';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ErrorComponent } from './error/error.component';
+import { CardComponent } from './card/card.component';
+
+import { HttpClientModule } from '@angular/common/http';
+//import { Component } from '@angular/core';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        WelcomeComponent,
+        DashboardComponent,
+        ErrorComponent,
+        CardComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatCheckboxModule,
+        MatSidenavModule,
+        MatToolbarModule,
+        MatMenuModule,
+        MatIconModule,
+        MatListModule,
+        MatSidenavModule,
+        FlexLayoutModule,
+        HttpClientModule,
+        MatCardModule
+        // Component
+    ],
+    providers: [MenuserviceService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
