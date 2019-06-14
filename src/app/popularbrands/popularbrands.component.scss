@@ -1,0 +1,55 @@
+mat-grid-tile {
+  background: lightblue;
+}
+
+div{
+	display: block;
+	border: black;
+}
+
+mat-card{
+    background: white;
+	color: black;
+	margin: 5px;
+	border: transparent;
+}
+
+mat-toolbar{
+	margin: 0;
+}
+
+
+img {
+  border: 1px solid #ddd;
+  margin: 4px;
+  padding: 16px 0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+  transition: 0.3s;
+  border: 1px solid gray;
+}
+
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+	color: #24272c;
+	
+}
+
+.tabheader{
+	background: white;
+	color: black;
+	margin: 5px;
+}
+
+.label{
+	color: black !important;
+}
+
+.mat-tab-label-content{
+	color: black !important;
+}

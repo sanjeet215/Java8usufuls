@@ -10,7 +10,8 @@ import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
-
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { MenuserviceService } from './services/menuservice.service';
 
@@ -30,6 +31,8 @@ import { CardComponent } from './card/card.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { CardGraphComponent } from './card-graph/card-graph.component';
+import { PopularbrandsComponent } from './popularbrands/popularbrands.component';
+import { CarspecComponent } from './carspec/carspec.component';
 //import { Component } from '@angular/core';
 
 @NgModule({
@@ -40,7 +43,9 @@ import { CardGraphComponent } from './card-graph/card-graph.component';
         DashboardComponent,
         ErrorComponent,
         CardComponent,
-        CardGraphComponent
+        CardGraphComponent,
+        PopularbrandsComponent,
+        CarspecComponent
     ],
     imports: [
         BrowserModule,
@@ -56,7 +61,9 @@ import { CardGraphComponent } from './card-graph/card-graph.component';
         MatSidenavModule,
         FlexLayoutModule,
         HttpClientModule,
-        MatCardModule
+        MatCardModule,
+		MatGridListModule,
+		MatTabsModule
         // Component
     ],
     providers: [MenuserviceService],
